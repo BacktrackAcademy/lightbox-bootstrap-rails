@@ -298,7 +298,6 @@ License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
       if (this.options.height < 560){
         height = this.options.height;
       }
-      console.log("height: " + height);
       this.resize(width);
       disableExternalCheck = this.$element.data('disableExternalCheck') || false;
       if (!disableExternalCheck && !this.isExternal(url)) {
@@ -314,7 +313,6 @@ License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
       if (this.modal_arrows) {
         this.modal_arrows.css('display', 'none');
       }
-      console.log(this.options);
       return this;
     },
     isExternal: function(url) {
